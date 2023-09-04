@@ -1,0 +1,46 @@
+{
+    "dateCreated":"Aug 28, 2023 8:00:13 PM",
+    "updateRecipient":"admin",
+    "source":"ADD",
+    "transition":"JOIN",
+    "preUpdateIdentifiers":[
+        {
+            "identifierDomain":{
+                "identifierDomainId":10100,
+                "identifierDomainName":"MaseruBaylorClinic",
+                "identifierDomainDescription":"OpenMRS ID for Maseru Baylor Clinic",
+                "universalIdentifier":"2.25.71280592878078638113873461180761116384",
+                "universalIdentifierTypeCode":"PI",
+                "namespaceIdentifier":"2.25.71280592878078638113873461180761116384",
+                "dateCreated":"Sep 21, 2020 1:28:30 PM"
+            },
+            "identifier":"A2381018664/23"
+        }
+    ],
+    "postUpdateIdentifiers":[
+        {
+            "identifierDomain":{
+                "identifierDomainId":18,
+                "identifierDomainName":"OpenEMPI",
+                "identifierDomainDescription":"OpenEMPI GID",
+                "universalIdentifier":"2.16.840.1.113883.4.357",
+                "universalIdentifierTypeCode":"ISO",
+                "namespaceIdentifier":"2.16.840.1.113883.4.357",
+                "dateCreated":"Oct 10, 2019 10:42:04 AM"
+            },
+            "identifier":"7fdc0a40-45dd-11ee-a640-000d3a6b88ce"
+        },
+        {
+            "identifierDomain":{
+                "identifierDomainId":10100,
+                "identifierDomainName":"MaseruBaylorClinic",
+                "identifierDomainDescription":"OpenMRS ID for Maseru Baylor Clinic",
+                "universalIdentifier":"2.25.71280592878078638113873461180761116384",
+                "universalIdentifierTypeCode":"PI",
+                "namespaceIdentifier":"2.25.71280592878078638113873461180761116384",
+                "dateCreated":"Sep 21, 2020 1:28:30 PM"
+            },
+            "identifier":"A2381018664/23"
+        }
+    ]
+}
