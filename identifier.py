@@ -3,9 +3,10 @@ import json
 
 class Identifier:
     def __init__(self, identifier):
-        self.json_file = open('identifier.json')
         self.identifier = identifier
+        self.json_file = open('identifier.json')
         self.json_body = json.load(self.json_file)
+        self.json_file.close()
         self.json_body["postUpdateIdentifiers"][0]["identifier"]=identifier
 
     def is_identifier_in_openxds(self, openxds_session):
