@@ -1,7 +1,7 @@
 #!/bin/bash
-FILENAME=test_batch.csv
+FILENAME=Identifie_batch4.csv
 HDR=$(head -1 $FILENAME)
-split -l 20000 $FILENAME xyz
+split -l 25001 $FILENAME xyz
 n=1
 for f in xyz*
 do

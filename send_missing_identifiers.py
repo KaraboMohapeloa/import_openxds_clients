@@ -1,6 +1,7 @@
 from openxds_session import Openxds_session
 from utils import get_identifiers_from_csv
 from utils import write_data_to_csv
+import time
 
 def main():
     filename = input("Enter CSV file name: ")
@@ -8,7 +9,12 @@ def main():
     identifiers = get_identifiers_from_csv(filename)
     sent_identifiers = []
     failed_identifiers = []
+    batch = 0
     for identifier in identifiers:
+        batch+=1
+        if(batch == 500):
+            time.sleep(30)
+            batch = 0
         if(identifier.send_to_openxds(openxds_session)):
             sent_identifiers.append(identifier)
         else:
