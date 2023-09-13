@@ -12,19 +12,19 @@ def main():
     batch = 0
     for identifier in identifiers:
         batch+=1
-        if(batch == 500):
-            time.sleep(15)
+        if(batch == 200):
+            time.sleep(10)
             batch = 0
         if(identifier.send_to_openxds(openxds_session)):
             sent_identifiers.append(identifier)
         else:
             failed_identifiers.append(identifier)
         
-    print("=================Found identifiers=================\n")
+    print("=================Sent identifiers=================\n")
     for identifier in sent_identifiers:
         print(identifier.identifier+"\n")
 
-    print("=================Missing identifiers=================\n")
+    print("=================Failed identifiers=================\n")
     for identifier in failed_identifiers:
         print(identifier.identifier+"\n")
 
