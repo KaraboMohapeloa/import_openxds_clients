@@ -13,7 +13,7 @@ def main():
     for identifier in identifiers:
         batch+=1
         if(batch == 500):
-            time.sleep(30)
+            time.sleep(15)
             batch = 0
         if(identifier.send_to_openxds(openxds_session)):
             sent_identifiers.append(identifier)
